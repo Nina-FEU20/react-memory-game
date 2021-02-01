@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 * {
   margin: 0;
@@ -8,15 +9,13 @@
 
 body {
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(
-    #ffdfba,
-    #ffffba,
-    #baffc9,
-    #bae1ff,
-    #ddb3ff,
-    #ffb3ba
-  );
+  font-family: "Rock Salt", cursive;
+  background: url(./images/djungel_display.jpg);
+}
+
+.main-section {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.288);
 }
 
 .header {
@@ -25,8 +24,9 @@ body {
 }
 
 .header h1 {
-  font-size: 2rem;
-  padding: 2rem;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 4px 4px #000000;
 }
 
 .winner {
@@ -34,16 +34,20 @@ body {
 }
 
 .winner h1 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 4rem;
+  margin: 2rem;
+  color: white;
+  text-shadow: 2px 2px #000000;
 }
 
 button {
   padding: 1em;
   font-weight: bold;
-  background: #692d55;
+  background: #1d8b0f;
+  border: none;
   border-radius: 5px;
   color: white;
+  font-size: 1.5rem;
 }
 
 .game-board {
@@ -64,12 +68,15 @@ button {
 .memory-cards h4 {
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  margin-top: -1rem;
 }
 
 .memory-card {
+  background: white;
   width: 200px;
   height: 200px;
-  background: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,7 +90,7 @@ button {
 }
 
 .back {
-  background: url(./images/back.jpg) no-repeat center/cover;
+  background: url(./images/safariback.jpg) no-repeat center/cover;
 }
 
 .front,
@@ -93,7 +100,7 @@ button {
   position: absolute;
   backface-visibility: hidden;
   font-size: 1.5em;
-  padding: 20px;
+  padding: 10px;
 }
 
 .flip {
@@ -102,19 +109,11 @@ button {
 
 .front {
   transform: rotateY(180deg);
-  background: linear-gradient(
-    #ffdfba,
-    #ffffba,
-    #baffc9,
-    #bae1ff,
-    #ddb3ff,
-    #ffb3ba
-  );
+}
 
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 4rem;
+.front img {
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {

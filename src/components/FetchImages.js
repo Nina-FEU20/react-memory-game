@@ -5,7 +5,7 @@ function FetchImages(props) {
     async function getImages() {
       const key = "e97530c4db33a4ae21d65f765fe9c551";
       const response = await fetch(
-        `https://www.flickr.com/services/rest/?api_key=${key}&method=flickr.photos.search&text=animal&format=json&nojsoncallback=1&page=2&page=1`
+        `https://www.flickr.com/services/rest/?api_key=${key}&method=flickr.photos.search&text=safarianimals&format=json&nojsoncallback=1&page=2&page=1`
       );
       const data = await response.json();
 
