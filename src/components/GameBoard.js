@@ -35,6 +35,7 @@ function GameBoard(props) {
     setFirstCard(0);
     setSecondCard(0);
     setLockGame(!lockGame);
+    props.setMoves(props.moves + 1);
   }
 
   return (
@@ -48,7 +49,6 @@ function GameBoard(props) {
             }
             image={image}
             index={index}
-            // number={number}
             key={index}
             firstCard={firstCard}
             secondCard={secondCard}

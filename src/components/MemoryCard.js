@@ -1,10 +1,5 @@
 import React from "react";
 
-//TODO
-//Denna komponent ska vara ett memorykort som innehåller en siffra
-//Den ska ha ett klickevent som håller koll på vilket kort du har klickat på
-//När man klickar på det ska du dynamiskt lägga till CSS-klassen "flip"
-
 function MemoryCard(props) {
   function handleClick(e) {
     props.setIsClicked([...props.isClicked, props.index]);
@@ -33,7 +28,7 @@ function MemoryCard(props) {
       <span className="front">
         <img src={props.image} alt="" />
       </span>
-      <span className="back" id={props.number}></span>
+      <span className="back"></span>
     </article>
   );
 }
